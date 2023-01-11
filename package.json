@@ -1,6 +1,6 @@
 {
   "name": "@rybos86/angular2gridster",
-  "version": "16.0.0",
+  "version": "15.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -16,7 +16,7 @@
     "release-minor": "standard-version -r minor",
     "release-fix": "standard-version -r patch",
     "release-dry": "standard-version  --dry-run -r patch",
-    "publish-lib": "npm run build && node ./updatePackageJson.js && cp -rf ./README.md ./dist/angular2gridster && cd ./dist/angular2gridster && npm publish --access public",
+    "publish-lib": "npm run build && node ./updatePackageJson.js && copy ./README.md ./dist/angular2gridster && cd ./dist/angular2gridster && npm publish --access public",
     "update-demo": "npm run build && ng build --configuration production --base-href /angular2gridster/ && gh-pages -d dist/gridster-demo"
   },
   "repository": {
